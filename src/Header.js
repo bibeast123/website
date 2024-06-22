@@ -1,4 +1,4 @@
-// Update your Header.js
+//  Header.js
 import { SocialLinks } from './SocialLinks'; // Import the SocialLinks component
 
 function Header() {
@@ -6,7 +6,7 @@ function Header() {
         <header className="header">
             <nav className="navigation">
             <SocialLinks />
-                <a href="https://drive.google.com/file/d/1l-VbsNKa8INB6-R-G-3xid4pCMm4eO9z/view?usp=sharing" className="button" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://drive.google.com/file/d/1q79z3YfUrtWoyjTFJ1MD318u1CWmawNl/view?usp=sharing" className="button" target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="#technical" className="button">Technical</a>
                 
                 <a href="#experience" className="button">Experience</a>
