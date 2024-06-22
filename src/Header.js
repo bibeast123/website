@@ -19,12 +19,12 @@ function Header() {
             <div className="about about-border">
             <div className="about">
                 
-                <h1>Hello 👋,<br></br>
+                <h1>Howdy 🤘,<br></br>
                     I'm Bidhan Devkota</h1>
                     </div>
 
                     <div className ="about-2">
-                <p>A computer science student from Texas, passionate about expanding my knowledge in diverse areas of technology.</p>
+                <p>A computer science student from Texas, currently attending University of Texas at Austin. I am passionate about expanding my knowledge in diverse areas of technology.</p>
                 </div>
             
             </div>
