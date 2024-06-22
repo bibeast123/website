@@ -1,0 +1,205 @@
+/* Example for App.css */
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --background-color: rgb(255, 255, 255);
+  --text-color: #001219;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-border {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid black; /* Add a black border */
+}
+
+.about-2, .about {
+  font-size: 36px;
+  text-align: center;
+}
+
+.about {
+  color: var(--secondary-color);
+}
+
+.about-2 {
+  color: black;
+}
+
+.header, .projects, .experience, .footer {
+  margin: 20px;
+  padding: 20px;
+}
+
+.header-image {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  width: 100%; /* Adjust the width as needed */
+  max-width: 500px; /* Set a maximum width to keep the image responsive */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  margin: 0 auto; /* This will center the image in the container */
+}
+
+.header-image img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-box {
+  flex: 1 1 calc(33.33% - 20px); /* Flex-grow, flex-shrink, flex-basis with margin adjustment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid black; /* Add a black border */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item-header {
+  text-align: center;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.timeline-date {
+  text-align: center;
+
+  margin-left: 10px; /* Adjust as needed */
+}
+
+.timeline-item-description p {
+  text-align: left;
+
+
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  grid-gap: 20px; /* Adjust the gap between the cards */
+}
+
+.project-card, .timeline-item {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid black; /* Add a black border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card img {
+  width: 100%; /* Make the image fill the card */
+  height: 200px; /* Fix the height of the image */
+  object-fit: contain; /* Ensure the image covers the area without distortion */
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.back-to-top {
+  position: absolute;  /* Ensure it stays in place while scrolling */
+  color: var(--secondary-color);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000; 
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+
+  .skills-box {
+    flex: 1 1 calc(50% - 20px); /* Adjust to two columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column on smaller screens */
+  }
+
+  .skills-box {
+    flex: 1 1 100%; /* Full width for single column */
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about, .about-2 {
+    font-size: 24px; /* Adjust for smaller screens */
+  }
+}
+
+.footer a {
+  font-size: 24px; /* Adjust the size as needed */
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #0a9396; /* Change to your preferred hover color */
+}
+
+.button {
+  background-color: var(--secondary-color); /* Use your primary color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-color); /* Use a different color for hover state */
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around; /* This will space out your buttons evenly */
+  align-items: center;
+  padding: 20px 0;
+}
