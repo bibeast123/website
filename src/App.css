@@ -27,7 +27,7 @@ body {
 }
 
 .about {
-  color: var(--secondary-color);
+  color: #028afa;
 }
 
 .about-2 {
@@ -141,7 +141,7 @@ body {
 
 .back-to-top {
   position: absolute;  /* Ensure it stays in place while scrolling */
-  color: var(--secondary-color);
+  color: #028afa;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -183,16 +183,15 @@ body {
   margin: 0 10px;
 }
 
-.footer a:hover {
-  color: #0a9396; /* Change to your preferred hover color */
-}
+
 
 .button {
-  background-color: var(--secondary-color); /* Use your primary color */
+  background-color: #028afa;/* Use your primary color */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
+  
   transition: background-color 0.3s ease;
 }
 

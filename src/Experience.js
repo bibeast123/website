@@ -6,7 +6,7 @@ function Experience() {
         {
             company: "AT&T",
             position: "Software Engineer Intern",
-            date: "06/2024 - 08/2024",
+            date: "06/2024 - Present",
             descriptions: [
                 "• Developed and implemented Generative AI automation tool and UI using React, Azure Databricks, and FastAPI, streamlining audit tax request processing and reducing response time by 85%",
                 "• Engineered an innovative call center solution integrating Python, Flask, and React, augmented with a custom language model for instantaneous transcription, achieving a 70% reduction in customer wait times and boosting response agility by 85%",
