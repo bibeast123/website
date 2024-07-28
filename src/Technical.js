@@ -1,39 +1,26 @@
+import React from 'react';
+import './App.css';
+
 function Technical() {
     const technicalSkills = {
-        codingLanguages: [
-            "Java", "Python", "C/C++", "Kotlin", "TypeScript", "JavaScript", "HTML/CSS", "SQL"
-        ],
-        frameworksAndTools: [
-            "React", "Angular", "Node.js", "Flask", "FastAPI", "GitHub", "Git", "Selenium", 
-            "Microsoft Office", "Tableau", "JIRA", "Postman", "Docker", "Kubernetes", "Jupyter", 
-            "Pandas", "PyTorch", "TensorFlow", "NumPy", "AWS", "Android Studio", "Azure Databricks"
-        ]
+        languages: ["Java", "Python", "C/C++", "Kotlin", "TypeScript", "JavaScript", "HTML/CSS", "SQL"],
+        frameworksAndLibraries: ["React", "Angular", "Node.js", "Flask", "FastAPI", "Selenium", "TensorFlow", "pandas", "NumPy", "Matplotlib"],
+        tools: ["Git", "Docker", "VS Code", "Visual Studio", "PyCharm", "IntelliJ", "Eclipse", "Jupyter", "Postman"],
+        platformsAndServices: ["AWS", "Azure Databricks", "Kubernetes", "Microsoft Office", "Tableau", "JIRA", "Android Studio"]
     };
 
     return (
-        <header className="header">
-            <section id="technical" className="technical">
-                <h2>Technical Skills</h2>
-                <div className="skills-container">
-                    <div className="skills-box">
-                        <h3>Languages:</h3>
-                        <ul className="skills-list">
-                            {technicalSkills.codingLanguages.map((language, index) => (
-                                <li key={index}>{language}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="skills-box">
-                        <h3>Frameworks and Tools:</h3>
-                        <ul className="skills-list">
-                            {technicalSkills.frameworksAndTools.map((tool, index) => (
-                                <li key={index}>{tool}</li>
-                            ))}
-                        </ul>
-                    </div>
+        <section id="technical" className="technical-section">
+            <h2 className="section-title">Technical Skills</h2>
+            <div className="technical-box">
+                <div className="skills-list">
+                    <p><strong>Languages:</strong> {technicalSkills.languages.join(', ')}</p>
+                    <p><strong>Frameworks & Libraries:</strong> {technicalSkills.frameworksAndLibraries.join(', ')}</p>
+                    <p><strong>Tools:</strong> {technicalSkills.tools.join(', ')}</p>
+                    <p><strong>Platforms & Services:</strong> {technicalSkills.platformsAndServices.join(', ')}</p>
                 </div>
-            </section>
-        </header>
+            </div>
+        </section>
     );
 }
 

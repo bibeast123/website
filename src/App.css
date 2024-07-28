@@ -13,12 +13,12 @@ body {
 }
 
 .about-border {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px rgb(255, 255, 255);
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  border: 2px solid black; /* Add a black border */
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Light gray border */
 }
 
 .about-2, .about {
@@ -34,7 +34,7 @@ body {
   color: black;
 }
 
-.header, .projects, .experience, .footer {
+.header, .projects, .experience, .footer, .technical-section {
   margin: 20px;
   padding: 20px;
 }
@@ -53,32 +53,39 @@ body {
   height: auto; /* Maintains the aspect ratio */
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+.technical-section {
+  margin: 20px 0;
 }
 
-.skills-box {
-  flex: 1 1 calc(33.33% - 20px); /* Flex-grow, flex-shrink, flex-basis with margin adjustment */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.section-title {
+  margin: 20px;
   padding: 20px;
-  border-radius: 8px;
-  border: 2px solid black; /* Add a black border */
-  margin: 10px;
-  box-sizing: border-box;
 }
 
-.skills-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-grow: 1;
+.technical-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Light gray border */
+  
+  padding: 20px;
+  margin: 20px ;
+  border-radius: 10px;
 }
+
+.skills-list p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.skills-list strong {
+  color: var(--primary-color);
+}
+
+
 
 .timeline-item {
   display: flex;
@@ -101,7 +108,15 @@ body {
 
 
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--primary-color);
+}
 
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -116,15 +131,12 @@ body {
 }
 
 .project-card, .timeline-item {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  border: 2px solid black; /* Add a black border */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Light gray border */
 }
 
 .project-card img {

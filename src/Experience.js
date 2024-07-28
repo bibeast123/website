@@ -1,3 +1,4 @@
+//Experience.js
 import React from 'react';
 import './App.css'; // Ensure you have this CSS file
 
@@ -8,8 +9,8 @@ function Experience() {
             position: "Software Engineer Intern",
             date: "06/2024 - Present",
             descriptions: [
-                "• Developed and implemented Generative AI automation tool and UI using React, Azure Databricks, and FastAPI, streamlining audit tax request processing and reducing response time by 85%",
-                "• Engineered an innovative call center solution integrating Python, Flask, and React, augmented with a custom language model for instantaneous transcription, achieving a 70% reduction in customer wait times and boosting response agility by 85%",
+                "• Developed and implemented a Generative AI automation tool using React, Azure, Databricks, and FastAPI, streamlining audit tax request processing by 35%, and presenting to the CEO and board of directors",
+                "• Engineered an innovative call center solution integrating Python, Flask, and React, augmented with a custom language model for instantaneous transcription, and boosting response time by 55% (patent pending)",
                 "• Directed the creation of an Audit Tax Summarizer UI, reducing manual processing time by 45% and enhancing team efficiency by streamlining audit report generation for a 20% increase in productivity",
             ]
         },
@@ -20,7 +21,7 @@ function Experience() {
             descriptions: [
                 "• Developed an AI Data Usage Optimizer using Flask, Python, and HTML/CSS for proactive data plan adjustments, increasing customer retention and satisfaction by 33% (patent pending)",
                 "• Enhanced TOM application using Angular, Java, SQL, and REST APIs, significantly improving functionality and user experience, leading to increased user satisfaction by 50% for 2,000 weekly unique users",
-                "• Saved the company $10,000 by efficiently addressing development stories following the Agile development process and using JIRA to manage stories, fostering a collaborative environment",
+                "• Implemented a scalable bug-tracking system using JIRA, which improved issue resolution time by 30% and contributed to a $10,000 cost saving",
             ]
         },
         {
